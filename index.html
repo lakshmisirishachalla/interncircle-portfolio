@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lakshmi Sirisha | Portfolio</title>
+
+    <style>
+
+        /* ---------- BASIC STYLING ---------- */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+
+        /* ---------- NAVBAR ---------- */
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #60a5fa;
+        }
+
+
+        /* ---------- HOME ---------- */
+
+        .hero {
+            min-height: 90vh;
+            padding: 80px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hello {
+            font-size: 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 10px 0;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+        }
+
+
+        /* ---------- BUTTONS ---------- */
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+
+        /* ---------- PROFILE CARD ---------- */
+
+        .profile-card {
+            background: white;
+            padding: 45px;
+            text-align: center;
+            border-radius: 15px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .profile-circle {
+            width: 150px;
+            height: 150px;
+
+            margin: auto;
+            margin-bottom: 20px;
+
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #2563eb;
+            color: white;
+
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+
+        /* ---------- COMMON SECTION ---------- */
+
+        section {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+
+        /* ---------- ABOUT ---------- */
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .about p {
+            margin-bottom: 15px;
+        }
+
+
+        /* ---------- SKILLS ---------- */
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .skill-card h3 {
+            margin-bottom: 15px;
+        }
+
+
+        /* ---------- CONTACT ---------- */
+
+        #contact {
+            background: #eaf0ff;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        /* ---------- MOBILE RESPONSIVE ---------- */
+
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .skills {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .social-links {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                Lakshmi Sirisha
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HOME -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-text">
+
+                <p class="hello">Hello, I'm</p>
+
+                <h1>Lakshmi Sirisha</h1>
+
+                <h2>Cybersecurity Student & Developer</h2>
+
+                <p>
+                    I am a B.Tech Computer Science Engineering student
+                    interested in cybersecurity, programming and web
+                    development.
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#contact" class="btn">
+                        Contact Me
+                    </a>
+
+                    <a href="#skills" class="btn">
+                        My Skills
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-card">
+
+                <div class="profile-circle">
+                    LS
+                </div>
+
+                <h3>Cybersecurity</h3>
+
+                <p>
+                    Learn • Build • Secure
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <div class="about">
+
+                <p>
+                    I am a B.Tech Computer Science Engineering student
+                    specializing in Cyber Security.
+                </p>
+
+                <p>
+                    I am interested in networking, ethical hacking,
+                    secure systems, programming and software development.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies and building
+                    practical projects.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section id="skills">
+
+            <h2>My Skills</h2>
+
+            <div class="skills">
+
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Python</p>
+                    <p>Java</p>
+                    <p>C</p>
+                </div>
+
+
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+
+
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <p>SQL</p>
+                </div>
+
+
+                <div class="skill-card">
+                    <h3>Cybersecurity</h3>
+                    <p>Networking</p>
+                    <p>Wireshark</p>
+                    <p>Nmap</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Feel free to connect with me through my social profiles.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="#" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="mailto:yourmail@example.com">
+                    Email
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Lakshmi Sirisha. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
